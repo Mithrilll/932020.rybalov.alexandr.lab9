@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.calc {
+    width: fit-content;
+    height: fit-content;
+    border: 3px solid lightskyblue;
+    padding: 15px;
+    margin: 20px;
+}
+
+.output {
+    box-sizing: border-box;
+    height: 50px;
+    width: 300px;
+    padding: 10px;
+    border: 1px solid rgb(129, 129, 129);
+    font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+
+.buttons {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+    grid-auto-rows: 50px;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.button {
+    cursor: pointer;
+}
+
+.equal {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.zero {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
